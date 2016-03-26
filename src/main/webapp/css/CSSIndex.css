@@ -1,0 +1,35 @@
+.esmaltes {
+    background-color: #F7CDD9;            
+    padding: 150px 25px;
+    background-image: url(../img/esmaltes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+container-fluid > 
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #F7CDD9;
+}
+
+.produtos {
+    background-color: #FA6900;
+    padding: 60px 50px;
+}
+
+.clientes {
+    background-color: #00C2F9;
+    padding: 60px 50px;
+}
+
+.sobre {
+
+    background-color: #F7CDD9;
+    padding: 60px 50px;
+}
+

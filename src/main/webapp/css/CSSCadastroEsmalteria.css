@@ -1,0 +1,29 @@
+body{
+    background-image: url(../img/wallpaper4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.caixaCadastro label{
+    color: white;
+}
+.formularioCadastro
+{
+    width:50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position:relative;                
+    top: 70px; 
+    margin: auto;
+}
+
+.caixaCadastro
+{               
+    width:90%;  
+    position: relative;              
+    padding: 10px;
+    margin: auto;
+}    
+
+.caixaCadastro button
+{
+    margin-left: 40%;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div  class="container-fluid">
+                    <div class="navbar-header">
+                        <img alt="Logotipo do Sistema" src="../img/logoNailSalon.png" class="img-responsive" width="100" />
+                    </div>
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li> 
+                        <li><a href="#clientes">Clientes</a></li> 
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"  data-toggle="modal" data-target="#inscricao"><span class="glyphicon glyphicon-user"></span>Inscrever-se</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#login" ><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="inscricao" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Inscrever-se</h4>
+                        </div>
+                        <div class="modal-body">
+                            <a href="htmlCadastroCliente.html" class="btn btn-primary btn-block">Cadastro de Cliente</a>
+                            <a href="htmlCadastroEsmalteria.html" class="btn btn-primary btn-block">Cadastro de Esmalteria</a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div id="login" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Entrar</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" action="htmlPerfilEsmalteria.html">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Senha">
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Permanecer Conectado</label>
+                                </div>
+
+                                <button type="submit" class="btn btn-block">Entrar</button>
+                                <a href="#" class="btn btn-block">Esqueceu sua senha?</a>
+                            </form>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </body>
+</html>
