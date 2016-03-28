@@ -9,7 +9,7 @@
     width: 60%;
     height: 200px;
     left: 20%;
-   
+
 }
 #conteudoDaPagina {
     background: #FFE4C4;
@@ -57,7 +57,7 @@
 }
 
 .timeline-panel  {
-      background-color: #FFFFF0;
+    background-color: #FFFFF0;
 }
 .timeline > li > .timeline-panel {
     width: 46%;
@@ -68,7 +68,7 @@
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  
+
 }
 
 .timeline > li > .timeline-panel:before {
@@ -201,5 +201,5 @@
         right: auto;
     }
 
-
+ 
 }

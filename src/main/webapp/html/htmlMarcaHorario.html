@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Marcar Horário</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!--web-fonts-->
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+        <!--//web-fonts-->
+        <!--Calendar-->
+        <link rel="stylesheet" href="../css/cssCalendario.css" type="text/css" />
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/underscore-min.js"></script>
+        <script src= "../js/moment-2.2.1.js"></script>
+        <script src="../js/clndr.js"></script>
+        <script src="../js/jscCalendario.js"></script>
+        <!-- end calendar -->
+
+        <link rel="stylesheet" href="../css/cssMarcaHorario.css" type="text/css" />
+        <link rel="stylesheet" href="../css/cssPerfilUsuario.css" type="text/css" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="../js/jscListaDupla.js"></script>
+        <script src="../js/jscTabelaDinamica.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div id="MenuPagina">
+            <div class="container">
+                <div class="container"></div>
+                <ul class="nav nav-tabs">
+                    <li><a href="htmlPerfilCliente.html">Horários Agendados</a></li>
+                    <li class="active"><a href="htmlMarcaHorario.html">Marcar Horário</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="conteudoDaPagina">
+            <form role="form">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <p class="lead">Esmalterias</p>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active">Esmalteria 1</a>
+                                <a href="#" class="list-group-item">Esmalteria 2</a>
+                                <a href="#" class="list-group-item">Esmalteria 3</a>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="content">		
+                                <div class="calnder">
+                                    <div class="column_right_grid calender">
+                                        <div class="cal1">
+                                            <div class="clndr">
+                                                <div class="clndr-controls">
+                                                    <div class="clndr-control-button">
+                                                        <p class="clndr-previous-button">previous</p>
+                                                    </div>
+                                                    <div class="month">SEPTEMBER 2015</div>
+                                                    <div class="clndr-control-button rightalign">
+                                                        <p class="clndr-next-button">next</p>
+                                                    </div>
+                                                </div>
+                                                <table class="clndr-table">	
+                                                    <thead>
+                                                        <tr class="header-days">
+                                                            <td class="header-day">SUN</td>
+                                                            <td class="header-day">MON</td>	
+                                                            <td class="header-day">TUE</td>
+                                                            <td class="header-day">WED</td>
+                                                            <td class="header-day">THU</td>
+                                                            <td class="header-day">FRI</td>
+                                                            <td class="header-day">SAT</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="day past adjacent-month last-month calender-day-2015-04-26"><div class="day-contents">26</div></td>
+                                                            <td class="day past adjacent-month last-month calender-day-2015-04-26"><div class="day-contents">26</div></td>
+                                                            <td class="day past adjacent-month last-month calender-day-2015-04-26"><div class="day-contents">26</div></td>
+                                                            <td class="day past adjacent-month last-month calender-day-2015-04-26"><div class="day-contents">26</div></td>
+                                                            <td class="day past adjacent-month last-month calender-day-2015-04-26"><div class="day-contents">26</div></td>
+                                                            <td class="day past calender-day-2015-05-01"><div class="day-contents">1</div></td>
+                                                            <td class="day past calender-day-2015-05-02"><div class="day-contents">2</div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="day past calender-day-2015-05-03"><div class="day-contents">3</div></td>
+                                                            <td class="day past calender-day-2015-05-04"><div class="day-contents">4</div></td>
+                                                            <td class="day past calender-day-2015-05-05"><div class="day-contents">5</div></td>
+                                                            <td class="day past calender-day-2015-05-06"><div class="day-contents">6</div></td>
+                                                            <td class="day past calender-day-2015-05-07"><div class="day-contents">7</div></td>
+                                                            <td class="day past calender-day-2015-05-08"><div class="day-contents">8</div></td>
+                                                            <td class="day past calender-day-2015-05-09"><div class="day-contents">9</div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="day past event calender-day-2015-05-10"><div class="day-contents">10</div></td>
+                                                            <td class="day past event calender-day-2015-05-11"><div class="day-contents">11</div></td>
+                                                            <td class="day past event calender-day-2015-05-12"><div class="day-contents">12</div></td>
+                                                            <td class="day past event calender-day-2015-05-13"><div class="day-contents">13</div></td>
+                                                            <td class="day today event calender-day-2015-05-14"><div class="day-contents">14</div></td>
+                                                            <td class="day calender-day-2015-05-15"><div class="day-contents">15</div></td>
+                                                            <td class="day calender-day-2015-05-16"><div class="day-contents">16</div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="day calender-day-2015-05-17"><div class="day-contents">17</div></td>
+                                                            <td class="day calender-day-2015-05-18"><div class="day-contents">18</div></td>
+                                                            <td class="day calender-day-2015-05-19"><div class="day-contents">19</div></td>
+                                                            <td class="day calender-day-2015-05-20"><div class="day-contents">20</div></td>
+                                                            <td class="day event calender-day-2015-05-21"><div class="day-contents">21</div></td>
+                                                            <td class="day event calender-day-2015-05-22"><div class="day-contents">22</div></td>
+                                                            <td class="day event calender-day-2015-05-23"><div class="day-contents">23</div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="day calender-day-2015-05-24"><div class="day-contents">24</div></td>
+                                                            <td class="day calender-day-2015-05-25"><div class="day-contents">25</div></td>
+                                                            <td class="day calender-day-2015-05-26"><div class="day-contents">26</div></td>
+                                                            <td class="day calender-day-2015-05-27"><div class="day-contents">27</div></td>
+                                                            <td class="day calender-day-2015-05-28"><div class="day-contents">28</div></td>
+                                                            <td class="day calender-day-2015-05-29"><div class="day-contents">29</div></td>
+                                                            <td class="day calender-day-2015-05-30"><div class="day-contents">30</div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="day calender-day-2015-05-31"><div class="day-contents">31</div></td>
+                                                            <td class="day adjacent-month next-month calender-day-2015-06-01"><div class="day-contents">1</div></td>
+                                                            <td class="day adjacent-month next-month calender-day-2015-06-02"><div class="day-contents">2</div></td>
+                                                            <td class="day adjacent-month next-month calender-day-2015-06-03"><div class="day-contents">3</div></td>
+                                                            <td class="day adjacent-month next-month calender-day-2015-06-04"><div class="day-contents">4</div></td>
+                                                            <td class="day adjacent-month next-month calender-day-2015-06-05"><div class="day-contents">5</div></td>
+                                                            <td class="day adjacent-month next-month calender-day-2015-06-06"><div class="day-contents">6</div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <hr>
+
+                            <p class="lead">Escolha o modelo</p>
+                            <div class="row">
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+
+                            <!-- Projects Row -->
+                            <div class="row">
+
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+
+                            <!-- Projects Row -->
+                            <div class="row">
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+
+
+
+                            <!-- Pagination -->
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#">&laquo;</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">&raquo;</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                                <p class="col-md-12 text-center lead">Escolha o seu material</p>
+                                <div class="col-sm-4 col-sm-offset-1">
+                                    <div class="list-group" id="list1">
+                                        <a href="#" class="list-group-item active">List 1 <input title="toggle all" type="checkbox" class="all pull-right"></a>
+                                        <a href="#" class="list-group-item">Second item <input type="checkbox" class="pull-right"></a>
+                                        <a href="#" class="list-group-item">Third item <input type="checkbox" class="pull-right"></a>
+                                        <a href="#" class="list-group-item">More item <input type="checkbox" class="pull-right"></a>
+                                        <a href="#" class="list-group-item">Another <input type="checkbox" class="pull-right"></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 v-center">
+                                    <button title="Send to list 2" class="btn btn-default center-block add"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                                    <button title="Send to list 1" class="btn btn-default center-block remove"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="list-group" id="list2">
+                                        <a href="#" class="list-group-item active">List 2 <input title="toggle all" type="checkbox" class="all pull-right"></a>
+                                        <a href="#" class="list-group-item">Alpha <input type="checkbox" class="pull-right"></a>
+                                        <a href="#" class="list-group-item">Charlie <input type="checkbox" class="pull-right"></a>
+                                        <a href="#" class="list-group-item">Bravo <input type="checkbox" class="pull-right"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <p class="text-center lead">Adicione os esmaltes</p>
+
+                            <div class="row clearfix">
+                                <div class="col-md-12 column">
+                                    <table class="table table-bordered table-hover" id="tab_logic">
+                                        <thead>
+                                            <tr >
+                                                <th class="text-center">
+                                                    Esmalte
+                                                </th>
+                                                <th class="text-center">
+                                                    Cor
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id='addr0'>
+                                                <td>
+                                                    <select class="form-control">
+                                                        <option>Colorama</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="form-control">
+                                                        <option>Vermelho</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr id='addr1'></tr>
+                                        </tbody>
+                                    </table>
+                                    <a id="add_row" class="btn btn-default pull-left">Adicionar esmalte</a><a id='delete_row' class="pull-right btn btn-default">Remover esmalte</a>
+                                </div>                              
+                            </div>
+
+                            <hr />
+                            <button type="submit" class="btn btn-primary btn-block">Marcar horário</button>
+                        </div>
+                    </div>
+
+                </div> <!-- /.container -->
+            </form>
+        </div>
+
+    </body>
+</html>

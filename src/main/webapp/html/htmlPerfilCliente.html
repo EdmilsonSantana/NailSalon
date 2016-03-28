@@ -1,16 +1,104 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Perfil do [Nome do Cliente]</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/cssPerfilUsuario.css" />
+        <link rel="stylesheet" type="text/css" href="../css/cssStarRating.css" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="MenuPagina">
+            <div class="container">
+                <div class="container"></div>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">Horários Agendados</a></li>
+                    <li><a href="htmlMarcaHorario.html">Marcar Horário</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="conteudoDaPagina" >
+            <div class="container">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge"><i class=""></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Esmalteria [Nome da Esmalteria] </h4>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>14:00 - 29/03/2016 </small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Horário marcado com o Funcionário [Nome do Funcionário].</p>
+                                <p>Esmaltes: [Esmaltes]</p>
+                                <p>Modelo: [Modelo]</p>
+                                <p>Produtos: [Produtos]</p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Esmalteria [Nome da Esmalteria]</h4>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>10:30 - 25/03/2016 </small></p>
+                                <form>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5_2" name="rating1" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star4half_2" name="rating1" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star4_2" name="rating1" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star3half_2" name="rating1" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star3_2" name="rating1" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star2half_2" name="rating1" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star2_2" name="rating1" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star1half_2" name="rating1" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star1_2" name="rating1" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="starhalf_2" name="rating1" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Horário marcado com o Funcionário [Nome do Funcionário].</p>
+                                <p>Esmaltes: [Esmaltes]</p>
+                                <p>Modelo: [Modelo]</p>
+                                <p>Produtos: [Produtos]</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Esmalteria [Nome da Esmalteria]</h4>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>18:00 - 22/03/2016 </small></p>
+                                <form>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5" name="rating2" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star4half" name="rating2" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star4" name="rating2" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star3half" name="rating2" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star3" name="rating2" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star2half" name="rating2" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star2" name="rating2" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star1half" name="rating2" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star1" name="rating2" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="starhalf" name="rating2" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Horário marcado com o Funcionário [Nome do Funcionário].</p>
+                                <p>Esmaltes: [Esmaltes]</p>
+                                <p>Modelo: [Modelo]</p>
+                                <p>Produtos: [Produtos]</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
