@@ -5,68 +5,122 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../css/cssPerfilUsuario.css" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/cssCadastroPerfilFuncionario.css">
+
     </head>
     <body>
-        <div id="MenuPagina">
-            <div class="container">
+
+        <div class="container">
+            <div id="MenuPagina">
                 <div class="container"><img id="logomarca" src="../img/logoNailSalon.png" alt="logo"></div>
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Horários Agendados</a></li>
-                    <li><a href="#">Funcionários</a></li>
-                    <li><a href="#">Materiais</a></li>
+                    <li class="active"><a data-toggle="tab" href="#home">Horários Agendados</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Funcionario<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a data-toggle="tab" href="#cadastrarFuncionario">Cadastrar Funcionário</a></li>
+                            <li><a data-toggle="tab" href="#listarFuncionarios">Listar Funcionários</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tabs-3">Materiais</a></li>
                     <li><a href="#">Contatos</a></li>
                 </ul>
             </div>
+
+            <div class="tab-content">
+                <div id="home" class= "tab-pane fade in active">
+                    <div id="conteudoDaPagina">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Lucilene Ferreira da Silva</h4>
+                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>10:30 às 11:30 - 25/03/2016 </small></p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>A cliente Natália Amâncio irá fazer francesinha com tal e tal esmalte. Obs: Ele trará o seu próprio alicate. <br>
+                                            Telefone : 997766961
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Lucilene Ferreira da Silva</h4>
+                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>10:30 às 11:30 - 25/03/2016 </small></p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>A cliente Natália Amâncio irá fazer francesinha com tal e tal esmalte. Obs: Ele trará o seu próprio alicate. <br>
+                                            Telefone : 997766961
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Lucilene Ferreira da Silva</h4>
+                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>10:30 às 11:30 - 25/03/2016 </small></p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>A cliente Natália Amâncio irá fazer francesinha com tal e tal esmalte. Obs: Ele trará o seu próprio alicate. <br>
+                                            Telefone : 997766961
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Parte do cadastro do Funcionario-->
+                <div id="cadastrarFuncionario" class="tab-pane fade">
+                    <!--                    <div id="conteudoDaPagina">-->
+                    <div>
+                        <form class="formularioCadastro">
+                            <div class="caixaCadastro">
+                                <div class="form-group">
+                                    <label for="inputNome">Nome</label>
+                                    <input type="text" class="form-control" id="inputNome" placeholder="Seu nome ou apelido">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="exemplo@exemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputFolga">Folga</label>
+                                    <input type="text" class="form-control" id="inputFolga" placeholder="Dia da folga">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputHorário">Horário</label>
+                                    <input type="text" class="form-control" id="inputHorário" placeholder="Horário de atendimento...">
+                                </div>
+                                <button type="submit" class="btn btn-default">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="listarFuncionarios" class="tab-pane fade">
+                    <div id="conteudoDaPagina">
+                        <p>Listar Funcionario</p>
+                    </div>
+                </div>
+            </div>  
+
         </div>
-        <div id="conteudoDaPagina" >
-            <div class="container">
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Lucilene Ferreira da Silva</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>10:30 às 11:30 - 25/03/2016 </small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>A cliente Natália Amâncio irá fazer francesinha com tal e tal esmalte. Obs: Ele trará o seu próprio alicate. <br>
-                                    Telefone : 997766961
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Lucilene Ferreira da Silva</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>10:30 às 11:30 - 25/03/2016 </small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>A cliente Natália Amâncio irá fazer francesinha com tal e tal esmalte. Obs: Ele trará o seu próprio alicate. <br>
-                                    Telefone : 997766961
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Lucilene Ferreira da Silva</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>10:30 às 11:30 - 25/03/2016 </small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>A cliente Natália Amâncio irá fazer francesinha com tal e tal esmalte. Obs: Ele trará o seu próprio alicate. <br>
-                                    Telefone : 997766961
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
     </body>
 </html>
